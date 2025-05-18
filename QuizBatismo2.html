@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre o Batismo: A Água Sem Nome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .question { margin-bottom: 1.5rem; }
+        .option { margin: 0.5rem 0; }
+        #result { margin-top: 2rem; }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-6 text-center">Quiz sobre o Batismo: A Água Sem Nome</h1>
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div class="question">
+                <p class="font-semibold">1. O que a história da "água sem rótulo" ilustra sobre o batismo?</p>
+                <label class="option"><input type="radio" name="q1" value="a"> a) A importância de usar água purificada.</label><br>
+                <label class="option"><input type="radio" name="q1" value="b"> b) A necessidade de um "selo" que identifica nossa fé em Cristo.</label><br>
+                <label class="option"><input type="radio" name="q1" value="c"> c) A preferência por bebidas conhecidas.</label><br>
+                <label class="option"><input type="radio" name="q1" value="d"> d) A desconfiança em rituais religiosos.</label>
+            </div>
+            <!-- Pergunta 2 -->
+            <div class="question">
+                <p class="font-semibold">2. Como o batismo é descrito em relação à nossa fé?</p>
+                <label class="option"><input type="radio" name="q2" value="a"> a) Um evento social para a comunidade.</label><br>
+                <label class="option"><input type="radio" name="q2" value="b"> b) Um ato público que declara nosso compromisso com Cristo.</label><br>
+                <label class="option"><input type="radio" name="q2" value="c"> c) Uma prática sem importância espiritual.</label><br>
+                <label class="option"><input type="radio" name="q2" value="d"> d) Um ritual exclusivo para líderes da igreja.</label>
+            </div>
+            <!-- Pergunta 3 -->
+            <div class="question">
+                <p class="font-semibold">3. Qual versículo bíblico associa o batismo à Grande Comissão?</p>
+                <label class="option"><input type="radio" name="q3" value="a"> a) Provérbios 3:5.</label><br>
+                <label class="option"><input type="radio" name="q3" value="b"> b) Mateus 28:19.</label><br>
+                <label class="option"><input type="radio" name="q3" value="c"> c) João 4:14.</label><br>
+                <label class="option"><input type="radio" name="q3" value="d"> d) Efésios 1:13.</label>
+            </div>
+            <!-- Pergunta 4 -->
+            <div class="question">
+                <p class="font-semibold">4. Por que Jesus, sendo sem pecado, foi batizado?</p>
+                <label class="option"><input type="radio" name="q4" value="a"> a) Para seguir uma tradição local.</label><br>
+                <label class="option"><input type="radio" name="q4" value="b"> b) Para servir de exemplo e se identificar com a humanidade.</label><br>
+                <label class="option"><input type="radio" name="q4" value="c"> c) Para purificar-se de pecados.</label><br>
+                <label class="option"><input type="radio" name="q4" value="d"> d) Para iniciar sua liderança na igreja.</label>
+            </div>
+            <!-- Pergunta 5 -->
+            <div class="question">
+                <p class="font-semibold">5. O que o batismo simboliza em relação à transformação interior?</p>
+                <label class="option"><input type="radio" name="q5" value="a"> a) Uma mudança apenas na aparência externa.</label><br>
+                <label class="option"><input type="radio" name="q5" value="b"> b) Um novo começo com uma transformação no coração.</label><br>
+                <label class="option"><input type="radio" name="q5" value="c"> c) Uma cerimônia sem impacto espiritual.</label><br>
+                <label class="option"><input type="radio" name="q5" value="d"> d) Uma prática para receber bênçãos materiais.</label>
+            </div>
+            <!-- Pergunta 6 -->
+            <div class="question">
+                <p class="font-semibold">6. Como o batismo é comparado ao lacre de uma garrafa?</p>
+                <label class="option"><input type="radio" name="q6" value="a"> a) Como um símbolo de segurança alimentar.</label><br>
+                <label class="option"><input type="radio" name="q6" value="b"> b) Como um selo espiritual que confirma nosso compromisso com Deus.</label><br>
+                <label class="option"><input type="radio" name="q6" value="c"> c) Como um sinal de pureza física.</label><br>
+                <label class="option"><input type="radio" name="q6" value="d"> d) Como uma marca comercial da igreja.</label>
+            </div>
+            <!-- Pergunta 7 -->
+            <div class="question">
+                <p class="font-semibold">7. Qual versículo descreve o batismo como um revestimento de Cristo?</p>
+                <label class="option"><input type="radio" name="q7" value="a"> a) Tito 3:5.</label><br>
+                <label class="option"><input type="radio" name="q7" value="b"> b) Gálatas 3:26-27.</label><br>
+                <label class="option"><input type="radio" name="q7" value="c"> c) Mateus 5:16.</label><br>
+                <label class="option"><input type="radio" name="q7" value="d"> d) 1 Pedro 2:9.</label>
+            </div>
+            <!-- Pergunta 8 -->
+            <div class="question">
+                <p class="font-semibold">8. O que a água do batismo simboliza em relação a Jesus?</p>
+                <label class="option"><input type="radio" name="q8" value="a"> a) Uma fonte de cura física.</label><br>
+                <label class="option"><input type="radio" name="q8" value="b"> b) A "água da vida" que purifica e dá vida eterna.</label><br>
+                <label class="option"><input type="radio" name="q8" value="c"> c) Um símbolo de riqueza espiritual.</label><br>
+                <label class="option"><input type="radio" name="q8" value="d"> d) Uma prática tradicional sem significado.</label>
+            </div>
+            <!-- Pergunta 9 -->
+            <div class="question">
+                <p class="font-semibold">9. Como o batismo é descrito em relação à confiança?</p>
+                <label class="option"><input type="radio" name="q9" value="a"> a) Um ato de desconfiança na igreja.</label><br>
+                <label class="option"><input type="radio" name="q9" value="b"> b) Um ato de confiança no plano de Deus para nossa vida.</label><br>
+                <label class="option"><input type="radio" name="q9" value="c"> c) Um ritual sem relação com a fé.</label><br>
+                <label class="option"><input type="radio" name="q9" value="d"> d) Um gesto para impressionar a comunidade.</label>
+            </div>
+            <!-- Pergunta 10 -->
+            <div class="question">
+                <p class="font-semibold">10. Qual é o papel da água na Antiga Aliança, conforme o texto?</p>
+                <label class="option"><input type="radio" name="q10" value="a"> a) Um símbolo de riqueza material.</label><br>
+                <label class="option"><input type="radio" name="q10" value="b"> b) Um meio de purificação e renovação.</label><br>
+                <label class="option"><input type="radio" name="q10" value="c"> c) Um elemento sem importância espiritual.</label><br>
+                <label class="option"><input type="radio" name="q10" value="d"> d) Uma prática exclusiva para sacerdotes.</label>
+            </div>
+            <!-- Pergunta 11 -->
+            <div class="question">
+                <p class="font-semibold">11. O que o batismo representa como uma "marca" de Deus?</p>
+                <label class="option"><input type="radio" name="q11" value="a"> a) Um sinal de autoridade na igreja.</label><br>
+                <label class="option"><input type="radio" name="q11" value="b"> b) Um selo de amor, perdão e aceitação de Deus.</label><br>
+                <label class="option"><input type="radio" name="q11" value="c"> c) Uma indicação de status social.</label><br>
+                <label class="option"><input type="radio" name="q11" value="d"> d) Um ritual sem impacto espiritual.</label>
+            </div>
+            <!-- Pergunta 12 -->
+            <div class="question">
+                <p class="font-semibold">12. Qual versículo associa o batismo ao selo do Espírito Santo?</p>
+                <label class="option"><input type="radio" name="q12" value="a"> a) 2 Coríntios 5:17.</label><br>
+                <label class="option"><input type="radio" name="q12" value="b"> b) Efésios 1:13.</label><br>
+                <label class="option"><input type="radio" name="q12" value="c"> c) Mateus 3:13-17.</label><br>
+                <label class="option"><input type="radio" name="q12" value="d"> d) João 4:14.</label>
+            </div>
+            <!-- Pergunta 13 -->
+            <div class="question">
+                <p class="font-semibold">13. Como o batismo é descrito em relação à jornada cristã?</p>
+                <label class="option"><input type="radio" name="q13" value="a"> a) Um evento isolado sem continuidade.</label><br>
+                <label class="option"><input type="radio" name="q13" value="b"> b) O pontapé inicial de uma vida nova com Cristo.</label><br>
+                <label class="option"><input type="radio" name="q13" value="c"> c) Uma prática opcional para cristãos.</label><br>
+                <label class="option"><input type="radio" name="q13" value="d"> d) Um ritual apenas para líderes espirituais.</label>
+            </div>
+            <!-- Pergunta 14 -->
+            <div class="question">
+                <p class="font-semibold">14. O que a história da "água sem rótulo" ensina sobre a confiança?</p>
+                <label class="option"><input type="radio" name="q14" value="a"> a) A importância de confiar apenas em marcas conhecidas.</label><br>
+                <label class="option"><input type="radio" name="q14" value="b"> b) A confiança na fidelidade de Deus, assim como confiamos na igreja.</label><br>
+                <label class="option"><input type="radio" name="q14" value="c"> c) A necessidade de evitar produtos sem identificação.</label><br>
+                <label class="option"><input type="radio" name="q14" value="d"> d) A desconfiança em gestos da comunidade.</label>
+            </div>
+            <!-- Pergunta 15 -->
+            <div class="question">
+                <p class="font-semibold">15. Como o batismo reflete a identidade do cristão?</p>
+                <label class="option"><input type="radio" name="q15" value="a"> a) Como um sinal de status na igreja.</label><br>
+                <label class="option"><input type="radio" name="q15" value="b"> b) Como uma declaração pública de pertencer a Cristo.</label><br>
+                <label class="option"><input type="radio" name="q15" value="c"> c) Como um ritual sem relação com a fé.</label><br>
+                <label class="option"><input type="radio" name="q15" value="d"> d) Como uma prática para receber bênçãos materiais.</label>
+            </div>
+            <button type="button" onclick="checkAnswers()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ver Resultado</button>
+        </form>
+        <div id="result" class="hidden"></div>
+    </div>
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'b', q2: 'b', q3: 'b', q4: 'b', q5: 'b',
+                q6: 'b', q7: 'b', q8: 'b', q9: 'b', q10: 'b',
+                q11: 'b', q12: 'b', q13: 'b', q14: 'b', q15: 'b'
+            };
+            const explanations = {
+                q1: 'A história da "água sem rótulo" ilustra o batismo como um "selo" que identifica nossa fé em Cristo, semelhante a um rótulo que dá confiança (Página 2).',
+                q2: 'O batismo é um ato público que declara nosso compromisso com Cristo, conforme Mateus 28:19 (Página 2).',
+                q3: 'Mateus 28:19 associa o batismo à Grande Comissão, onde Jesus ordena fazer discípulos e batizá-los (Página 2).',
+                q4: 'Jesus, sem pecado, foi batizado para servir de exemplo e se identificar com a humanidade (Página 2, Mateus 3:13-17).',
+                q5: 'O batismo simboliza um novo começo com uma transformação no coração, conforme 2 Coríntios 5:17 (Página 3).',
+                q6: 'O batismo é comparado ao lacre de uma garrafa como um selo espiritual que confirma o compromisso com Deus (Página 3, Efésios 1:13).',
+                q7: 'Gálatas 3:26-27 descreve o batismo como um revestimento de Cristo (Página 4).',
+                q8: 'A água do batismo simboliza Jesus como a "água da vida" que purifica e dá vida eterna (Página 6, João 4:14).',
+                q9: 'O batismo é um ato de confiança no plano de Deus, conforme Provérbios 3:5 (Página 3).',
+                q10: 'Na Antiga Aliança, a água era usada para purificação e renovação, como nos rituais dos sacerdotes (Página 5).',
+                q11: 'O batismo é um selo de amor, perdão e aceitação de Deus, conforme 1 Pedro 2:9 (Página 5).',
+                q12: 'Efésios 1:13 associa o batismo ao selo do Espírito Santo (Página 3).',
+                q13: 'O batismo é o pontapé inicial de uma vida nova com Cristo, marcando o início da jornada cristã (Página 4).',
+                q14: 'A história da "água sem rótulo" ensina a confiar na fidelidade de Deus, assim como confiamos na igreja (Página 3).',
+                q15: 'O batismo é uma declaração pública de pertencer a Cristo, conforme Gálatas 3:27 (Página 4).'
+            };
+            let score = 0;
+            let resultText = '<h2 class="text-xl font-bold mb-4">Resultado do Quiz</h2>';
+            for (let i = 1; i <= 15; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                const questionDiv = document.querySelector(`.question:nth-child(${i})`);
+                if (selected && selected.value === answers[`q${i}`]) {
+                    score++;
+                    questionDiv.classList.add('bg-green-100');
+                } else {
+                    questionDiv.classList.add('bg-red-100');
+                }
+                resultText += `<p><strong>Pergunta ${i}:</strong> Resposta correta: ${answers[`q${i}`]}. ${explanations[`q${i}`]}</p>`;
+            }
+            resultText = `<p class="text-lg">Você acertou ${score} de 15 perguntas!</p>` + resultText;
+            document.getElementById('result').innerHTML = resultText;
+            document.getElementById('result').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
